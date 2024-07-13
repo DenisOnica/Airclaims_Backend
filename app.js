@@ -36,7 +36,7 @@ const logger = winston.createLogger({
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  sslValidate: true,
+  tls: true,
 });
 const db = mongoose.connection;
 db.on("error", (error) => {
