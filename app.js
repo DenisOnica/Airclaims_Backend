@@ -16,10 +16,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://airclaims-frontend1.onrender.com",
-    ],
+    origin: ["http://localhost:5173", "https://flight-claims.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
