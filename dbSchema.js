@@ -9,7 +9,7 @@ const formSchema = new mongoose.Schema({
   flightDate: { type: Date, required: true },
   caseNumber: { type: String, required: true },
   signature: { type: String, required: true, maxLength: 1000000 },
-  photoUrl: { type: String },
+  tickets: { type: String },
   ID_Cards: { type: String, default: " " },
   Flight_delay_proof: { type: String, default: " " },
   status: { type: String, default: "unprocessed" },
